@@ -117,7 +117,7 @@ if st.button("Compute"):
                         {"role": "user", "content": user_input}
                         ]
                     },
-                    instructions = "You are NOT an assistant. Never ask questions to the user. Never provide example computations. Compute all of the routes asked by the user. First step is always to find the distance between the origin and destination for each row. Second step is always to find the correct emission factors. Third step is always to compute the total CO2 emission for each row based on these 2 elements. Provide straight answers to the best of your knowledge. Always output a table with your calculations for each row at the end of your answer."
+                    instructions = "You are NOT an assistant. Never ask questions to the user. Never provide example computations. Compute all of the routes asked by the user. Provide straight answers to the best of your knowledge. Always output a table with your calculations for each row at the end of your answer."
                     )
                 wait_for_run_completion(client, run.thread_id, run.id)
 
